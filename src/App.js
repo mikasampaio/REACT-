@@ -1,12 +1,31 @@
-import React from "react";
+import React from 'react';
 
-import { H1 } from './styles.js'
+import {
+  Container,
+  Image,
+  ContainerItens,
+  H1,
+  Label,
+  Input,
+  Button,
+} from './styles.js';
 
 export default function App() {
   return (
-    <div>
-      <H1>Hello StackBlitz!</H1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <Container>
+      <Image></Image>
+      <ContainerItens>
+        <H1>Olá!</H1>
+
+        <Label>Nome</Label>
+        <Input placeholder="Nome"></Input>
+
+        <Label>Idade</Label>
+        <Input placeholder="Idade"></Input>
+
+        <Button>Cadastrar</Button>
+
+      </ContainerItens>
+    </Container>
   );
 }
